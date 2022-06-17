@@ -1,0 +1,26 @@
+<header id="header">
+    <a  class="logo"><img src="{{ url_for('static', filename='icon/logo.jpg') }}" alt="logo"></a>
+    <div class="phone"><i class="fa fa-phone"></i>+1 234 567 8900</div>
+    <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
+    <nav class="main-menu top-menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            {% if session.logged_in %}
+            {% if session['username']=="admin" %}
+            <li class="nav-item"><a class="nav-item" href="/dashboard">Dashboard</a></li>
+            {%endif%}
+            {% if session['status']=="checked" %}
+            <li class="nav-item"><a class="nav-item" href="/checkout">Checkout</a></li>
+            {%endif%}
+          <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+          {% else %}
+          <li class="nav-item"><a href="/register">Registration</a></li>
+          
+          <li class="nav-item"><a href="/login">Login</a></li>
+          {% endif %}
+        </ul>
+
+        
+    </nav>
+</header>

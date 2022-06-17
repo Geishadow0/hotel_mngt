@@ -1,0 +1,87 @@
+{% extends 'layout.html' %} {% block body %}
+<h1>Dashboard</h1>
+<p><small> Welcome {{session.username}}</small></p>
+
+<hr />
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-10">
+		</div>
+		<div class="col-md-2">
+			 
+            <a href="/sendmail" class="btn btn-lg btn-outline-primary" align="left">Send Mail!</a>
+			
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <p>Log Pendapatan</p>
+      <table class="table table-striped">
+        <tr>
+          <th>ID</th>
+          <th>Income ($)</th>
+          <th>TimeStamp</th>
+        </tr>
+        {% for ilog in ilogs %}
+        <tr>
+          <td>{{ilog.id}}</td>
+          <td>{{ilog.income}}</td>
+          <td>{{ilog.time}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <p>Log Booking</p>
+      <table class="table table-striped">
+        <tr>
+          <th>ID</th>
+          <th>Pelanggan</th>
+          <th>Room ID</th>
+          <th>Check In</th>
+          <th>Check Out</th>
+        </tr>
+        {% for sewa in sewas %}
+        <tr>
+          <td>{{sewa.id}}</td>
+          <td>{{sewa.pelanggan}}</td>
+          <td>{{sewa.room_id}}</td>
+          <td>{{sewa.check_in}}</td>
+          <td>{{sewa.check_out}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <p>Log account</p>
+      <table class="table table-striped">
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Date of creation</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+          <td>{{user.id}}</td>
+          <td>{{user.username}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.date}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+<div style="padding-top:50px;">
+    <a href="/webprint" class="btn btn-lg btn-outline-primary" align="left">Print DashBoard!</a>
+</div>
+
+{% endblock %}

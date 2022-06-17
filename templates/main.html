@@ -1,0 +1,310 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+ <!-- Welcome Section Start -->
+ <div id="welcome">
+    <div class="container">
+        <h3>EXOTIC BEAUTY ON BALI : THE ISLAND OF GODS</h3>
+        <p>Be entranced by the tropical nature of Royal Bali, an idyllic sanctuary that will enchant you with its warmth and the exclusivity of its services.</p>
+    </div>
+</div>
+<!-- Welcome Section End -->
+
+<!-- Amenities Section Start -->
+<div id="amenities" class="home-amenities">
+    <div class="container">
+        <div class="section-header">
+            <h2>Amenities & Services</h2>
+            <p>
+                Every Stuites Include
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/air-conditioner-hover.png') }} "alt=" "/></i>
+                <h3>Air Conditioner</h3>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/bathtub-hover.png') }} "alt=" "/></i>
+                <h3>Bathtub</h3>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/shower-hover.png') }} "alt=" "/></i>
+                <h3>Shower</h3>
+               
+            </div>
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/television-hover.png') }} "alt=" "/></i>
+                <h3>Television</h3>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/wifi-hover.png') }} "alt=" "/></i>
+                <h3>WiFi</h3>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/call-hover.png') }} "alt=" "/></i>
+                <h3>Telephone</h3>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/minibar-hover.png') }} "alt=" "/></i>
+                <h3>Mini Bar</h3>
+                
+            </div>
+            <div class="col-md-3 col-sm-6 icons">
+                <i><img src="{{ url_for('static', filename='icon/kitchen-hover.png') }} "alt=" "/></i>
+                <h3>Kitchen</h3>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Amenities Section Start -->
+
+<!-- Room Section Start -->
+<div id="rooms">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Suites</h2>
+            <p>
+                All suites at Oceana are unique. Layout and individual features may vary.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="room-img">
+                            <div class="box12">
+                                <img src="{{ url_for('static', filename='room/room-1.jpg') }}" alt="">
+                                <div class="box-content">
+                                    <h3 class="title">Standard Single</h3>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="room-des">
+                            <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Single</a></h3>
+                            <p style="font-size:16px;">Step into our brightly finished and modern sanctuary while taking in the views of our famously lush gardens from the soft day bed on your own private balcony/terrace. This 260 sq. ft. room features 2 twin beds and bathroom with separate shower and bathtub that artfully balances Balinese heritage with contemporary style.</p>
+                            <ul class="room-size">
+                                <li><i class="fa fa-arrow-right"></i>Size: 260 sq ft </li>
+                                <li><i class="fa fa-arrow-right"></i>Beds: 2 Single(s) </li>
+                            </ul>
+                            <ul class="room-icon">
+                                <li><img src="{{ url_for('static', filename='icon/shield.png') }}" alt="" height="30" width="25" /> </li>
+                                <li><img src="{{ url_for('static', filename='icon/air-conditioner.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/bathtub.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/shower.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/television.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/wifi.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/call.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/minibar.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/kitchen.png') }}" alt=""height="30" width="25"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="room-rate">
+                            <h3>From</h3>
+                            <h1>$150</h1>
+                            <a href="/rooms/1/150">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="room-img">
+                            <div class="box12">
+                                <img src="{{ url_for('static', filename='room/room-2.jpg') }}" alt="">
+                                <div class="box-content">
+                                    <h3 class="title">Standard Double</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="room-des">
+                            <h3><a href="#" data-toggle="modal" data-target="#modal-id">Standard Double</a></h3>
+                            <p style="font-size:16px;">Newly renovated room lit with light color palette and warm lights. Step into your sanctuary in Bali and luxuriate in our 300 sq. ft. Room that artfully balances Balinese heritage and contemporary style. Soak in the views of the beautiful lush garden from the soft day bed on your own private balcony/terrace. </p>
+                            <ul class="room-size">
+                                <li><i class="fa fa-arrow-right"></i>Size: 300 sq ft </li>
+                                <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                            </ul>
+                            <ul class="room-icon">
+                                <li><img src="{{ url_for('static', filename='icon/shield.png') }}" alt="" height="30" width="25" /> </li>
+                                <li><img src="{{ url_for('static', filename='icon/air-conditioner.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/bathtub.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/shower.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/television.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/wifi.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/call.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/minibar.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/kitchen.png') }}" alt=""height="30" width="25"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="room-rate">
+                            <h3>From</h3>
+                            <h1>$200</h1>
+                            <a href="/rooms/2/200">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="room-img">
+                            <div class="box12">
+                                <img src="{{ url_for('static', filename='room/room-3.jpg') }}" alt="">
+                                <div class="box-content">
+                                    <h3 class="title">Premium Single</h3>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="room-des">
+                            <h3><a href="#" data-toggle="modal" data-target="#modal-id">Premium Single</a></h3>
+                            <p style="font-size:16px;">Take in direct ocean views from our modern Ocean View room with over 360 sq. ft. of living space and balcony. Offering unrivalled comfort with thoughtful amenities and elegant Balinese-inspired furnishings, the Premium Single Room features a bedroom with 2 Single beds, separate shower and bathtub, complete with our hallmark Royal Hotel service.</p>
+                            <ul class="room-size">
+                                <li><i class="fa fa-arrow-right"></i>Size: 360 sq ft </li>
+                                <li><i class="fa fa-arrow-right"></i>Beds: 2 Single(s) </li>
+                            </ul>
+                            <ul class="room-icon">
+                                <li><img src="{{ url_for('static', filename='icon/shield.png') }}" alt="" height="30" width="25" /> </li>
+                                <li><img src="{{ url_for('static', filename='icon/air-conditioner.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/bathtub.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/shower.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/television.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/wifi.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/call.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/minibar.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/kitchen.png') }}" alt=""height="30" width="25"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="room-rate">
+                            <h3>From</h3>
+                            <h1>$300</h1>
+                            <a href="/rooms/3/300">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="room-img">
+                            <div class="box12">
+                                <img src="{{ url_for('static', filename='room/room-4.jpg') }}" alt="">
+                                <div class="box-content">
+                                    <h3 class="title">Premium Double</h3>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="room-des">
+                            <h3 style="font-size:16px;"><a href="#" data-toggle="modal" data-target="#modal-id">Premium Double</a></h3>
+                            <p style="font-size:16px;">Take in direct ocean views from our modern Ocean View room with over 360 sq. ft. of living space and balcony. Offering unrivalled comfort with thoughtful amenities and elegant Balinese-inspired furnishings, the Premium Double Room features a bedroom with 2 king bed and separate shower and bathtub, complete with our hallmark Royal Hotel service.</p>
+                            <ul class="room-size">
+                                <li><i class="fa fa-arrow-right"></i>Size: 360 sq ft </li>
+                                <li><i class="fa fa-arrow-right"></i>Beds: 2 Double(s) </li>
+                            </ul>
+                            <ul class="room-icon">
+                                <li><img src="{{ url_for('static', filename='icon/shield.png') }}" alt="" height="30" width="25" /> </li>
+                                <li><img src="{{ url_for('static', filename='icon/air-conditioner.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/bathtub.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/shower.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/television.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/wifi.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/call.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/minibar.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/kitchen.png') }}" alt=""height="30" width="25"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="room-rate">
+                            <h3>From</h3>
+                            <h1>$350</h1>
+                            <a href="/rooms/4/350">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="room-img">
+                            <div class="box12">
+                                <img src="{{ url_for('static', filename='room/room-5.jpg') }}" alt="">
+                                <div class="box-content">
+                                    <h3 class="title">Presidential Suites</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="room-des">
+                            <h3><a href="#" data-toggle="modal" data-target="#modal-id">Presidential Suites</a></h3>
+                            <p style="font-size:16px;">Retreat to one of Bali's most treasured address, the Royal Hotel Presidential Suite offers a stay in ultimate splendor. Contemporary yet classic in style, this 450 sq. ft. suite is exquisitely designed to create a soaring sense of space combined with the utmost privacy.</p>
+                            <ul class="room-size">
+                                <li><i class="fa fa-arrow-right"></i>Size: 450 sq ft </li>
+                                <li><i class="fa fa-arrow-right"></i>Beds: 1 King Size </li>
+                            </ul>
+                            <ul class="room-icon">
+                                <li><img src="{{ url_for('static', filename='icon/shield.png') }}" alt="" height="30" width="25" /> </li>
+                                <li><img src="{{ url_for('static', filename='icon/air-conditioner.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/bathtub.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/shower.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/television.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/wifi.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/call.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/minibar.png') }}" alt=""height="30" width="25"/></li>
+                                <li><img src="{{ url_for('static', filename='icon/kitchen.png') }}" alt=""height="30" width="25"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="room-rate">
+                            <h3>From</h3>
+                            <h1>$400</h1>
+                            <a href="/rooms/5/400">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Room Section End -->
+
+
+
+{% endblock %}
+
+

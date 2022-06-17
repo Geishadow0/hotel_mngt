@@ -1,0 +1,76 @@
+{% extends 'layout.html' %} {% block body %}
+
+ <!-- About Section Start -->
+ <div id="about">
+    <div class="container">
+        <div class="section-header">
+            <h1>We are Royal Hotel Group</h1>
+            <p>
+                One of the world's largest and most dynamic hotel groups. Nine distinctive brands. More than 2000 hotels in operation and under development worldwide.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 img-cols">
+                <div class="img-col">
+                    <img class="img-fluid" src="{{url_for('static', filename='img/about-1.jpg')}}">
+                </div>
+            </div>
+            <div class="col-md-6 content-cols">
+                <div class="content-col">
+                    <h3>The World’s Leading Portfolio of Hotel Brands</h3>
+                    <p>
+                        Our 9 distinct brands deliver tremendous range of development options globally. Differentiated by visionary design and signature programming and services, our powerful portfolio offers guests and owners the right brand in the right place worldwide.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-6 img-cols d-block d-md-none">
+                <div class="img-col">
+                    <img class="img-fluid" src="img/about/about-2.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 content-cols">
+                <div class="content-col">
+                    <h3>Our way of being</h3>
+                    <p>
+                        At Radisson Hotel Group we strive to be the first choice in the mind of guests, owners and talent. In our journey to achieve this, we practice strong beliefs and actions that respect the diversity of people, the community, ethics and the planet.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-6 img-cols d-none d-md-block">
+                <div class="img-col">
+                    <img class="img-fluid" src="{{url_for('static', filename='img/about-2.jpg')}}">
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-6 img-cols">
+                <div class="img-col">
+                    <img class="img-fluid" src="{{url_for('static', filename='img/about-3.jpg')}}">
+                </div>
+            </div>
+            <div class="col-md-6 content-cols">
+                <div class="content-col">
+                    <h3>A global presence</h3>
+                    <p>
+                        We are present in 120 countries worldwide with nine distinctive brands covering five continents. Together with our partners we continue to develop new hotels and to generate synergies to go much further.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Section End -->
+
+
+
+
+{%endblock%}
