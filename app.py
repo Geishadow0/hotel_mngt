@@ -6,6 +6,7 @@ from passlib.hash import sha256_crypt
 from functools import wraps
 import pdfkit
 import os
+import random
 from flask_mail import Mail, Message
 
 
